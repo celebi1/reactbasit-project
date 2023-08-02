@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+###psql -U postgres // postgres kullanıcısına bağlan
+CREATE DATABASE login_db; // login_db adlı bir veritabanı oluştur
+\c login_db // login_db veritabanına bağlan
+CREATE TABLE users (id SERIAL PRIMARY KEY, email VARCHAR(255), password VARCHAR(255)); // users tablosunu oluştur
+INSERT INTO users (email, password) VALUES ('test@test.com', '123456'); // test kullanıcısı ekleyelim
